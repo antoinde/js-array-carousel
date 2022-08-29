@@ -35,7 +35,22 @@ img{
     width: 100%;
 }
 button{
-    background-color: darkseagreen;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    width: 100%;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#next{
+    bottom: 0;
+}
+#previous{
+    top: 0;
 }
 
 .item{
@@ -43,4 +58,5 @@ button{
 }
 .active{
     display: inline-block;
+    transition: 200ms ease-in-out;
 }
