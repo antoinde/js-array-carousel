@@ -7,12 +7,45 @@
 
     <!-- link to CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- link to Javascript -->
-    <script src="js/script.js"></script>
     
     <title>Carosello Mono Array</title>
 </head>
 <body>
-    
+    <div class="carousel-container">
+        <div class="img-container">
+            
+            <img class="item active" src="img/01.jpg" alt="image1">
+            <img class="item" src="img/02.jpg" alt="image2">
+            <img class="item" src="img/03.jpg" alt="image3">
+            <img class="item" src="img/04.jpg" alt="image4">
+            <img class="item" src="img/05.jpg" alt="image5">
+            
+        </div>
+        <div class="side-img-container">
+            <button id="previous">&uparrow;</button>
+            <div class="card">
+                <img src="img/01.jpg" alt="image1">
+            </div>
+            <div class="card">
+                <img src="img/02.jpg" alt="image2">
+            </div>
+            <div class="card">
+                <img src="img/03.jpg" alt="image3">
+            </div>
+            <div class="card">
+                <img src="img/04.jpg" alt="image4">
+            </div>
+            <div class="card">
+                <img src="img/05.jpg" alt="image5">
+            </div>
+            
+            
+            <button id="next">&downarrow;</button>
+            
+        </div>
+
+    </div>
 </body>
+<!-- link to Javascript -->
+<script src="js/script.js"></script>
 </html>

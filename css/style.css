@@ -1,0 +1,46 @@
+.carousel-container{
+    padding: 10px;
+    display: flex;
+    column-gap: 10px;
+    background-color:teal;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+}
+
+.img-container{
+    border: 5px solid white;
+    width: 80%;
+    height: 100%;
+    margin-top: 36px;
+    position: relative;
+}
+
+.side-img-container{
+    border: 5px solid white;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+img{
+    width: 100%;
+}
+button{
+    background-color: darkseagreen;
+}
+
+.item{
+    display: none;
+}
+.active{
+    display: inline-block;
+}
