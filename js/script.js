@@ -28,3 +28,55 @@ commenteremo (oscureremo) alcuni elementi per poterli riprodurre dinamicamente i
 3. Al momento giusto (ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"
 */
 
+const images=['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg'];
+
+// cancellare il contenuto presente nel img-container
+const imageContainer = document.querySelector('.img-container');
+
+imageContainer.innerHTML = '';
+
+//dobbiamo sapere quale immagine è attiva (la prima dell'array)
+let activeImageIndex = 0;
+console.log (images[activeImageIndex]);
+
+// generiamo un nuovo innerHTML dall'array
+
+//aggiungiamo la classe .active all'immagine attiva
+
+for(let i=0; i < images.length; i++) {
+    console.log(images[i]);
+    console.log('indice immagine i: ', i, 'indice attivo: ', activeImageIndex);
+
+    let classActiveName='';
+    if(i===activeImageIndex){
+        classActiveName=' active';
+    }
+
+    //aggiunge bottone freccia sù
+    if(i===0)
+        imageContainer.innerHTML += `<button id="previous">&uparrow;</button>`;
+
+    //aggiungi tutte le immagini dentro img-container
+    imageContainer.innerHTML += `<img class="item${classActiveName}" src="img/${images[i]}" alt="${images[i]}" />`;
+
+    //aggiunge bottone freccia giù
+    if(i===images.length-1)
+        imageContainer.innerHTML += `<button id="next">&downarrow;</button>`;
+}
+
+//aggiungiamo l'interazione con i pulsanti
+const nextButton = document.getElementById('next-button');
+
+nextButton.addEventListener('click', function(){
+    console.log('Next button clicked!');
+
+    // se c'è una immagine dopo quella attiva 
+    if (activeImageIndex < images.length-1) {
+        //passa a quella successiva
+        activeImageIndex++;
+    }
+    // altrimenti ritorna all'inizio (per scorrere all'infinito)
+    else{
+        activeImageIndex = 0;
+    }
+})
