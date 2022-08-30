@@ -62,8 +62,5 @@ button:hover{
     transition: 200ms ease-in-out;
 }
 .side-img-container img{
-    opacity: 0.8;
-}
-.side-img-container img.leaveopacity{
-    opacity: 0;
+    opacity: 0.2;
 }
