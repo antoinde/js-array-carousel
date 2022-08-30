@@ -48,17 +48,22 @@ button{
 button:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }
-#next{
+#next-button{
     bottom: 0;
 }
-#previous{
+#previous-button{
     top: 0;
 }
-
 .item{
     display: none;
 }
 .active{
     display: inline-block;
     transition: 200ms ease-in-out;
+}
+.side-img-container img{
+    opacity: 0.8;
+}
+.side-img-container img.leaveopacity{
+    opacity: 0;
 }
