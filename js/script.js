@@ -46,7 +46,7 @@ nextButton.addEventListener('click', function(){
         //punto all'immagine successiva
         activeImg++;
     }
-    //altrimenti ritorna da capo (infinite scroll)
+    //altrimenti ritorna da capo (infinite scroll) BONUS 1
     else
     {
         activeImg = 0;
